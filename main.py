@@ -1,3 +1,4 @@
+import os
 import discord
 from myserver import server_on
 # กำหนด Intents ให้บอท
@@ -118,4 +119,4 @@ async def on_message(message):
 
 server_on()
 # รันบอทด้วย Token ของคุณ
-client.run('TOKEN')  # เปลี่ยน YOUR_BOT_TOKEN ด้วย Token ของบอทที่คุณได้จาก Discord Developer Portal
+bot.run(os.getenv'TOKEN')  # เปลี่ยน YOUR_BOT_TOKEN ด้วย Token ของบอทที่คุณได้จาก Discord Developer Portal
